@@ -2322,7 +2322,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #contact {
-	background: #151515;
+	background: #151515 url(../images/contact-bg.jpg) no-repeat center;
 	padding-top: 12rem;
 	padding-bottom: 7.2rem;
 }
