@@ -46,9 +46,13 @@
  *
  * ------------------------------------------------------------------- 
  */
-@media screen {
+@media print {
+header, introSection, contactSection, footer {
+	display: none;
+}
+
 html {
-	font-size: 10px;
+	font-size: 10pt;
 }
 
 @media only screen and (max-width:1024px) {
@@ -73,7 +77,7 @@ html, body {
 body {
 	background: #151515;
 	font-family: "lora-regular", serif;
-	font-size: 1.7rem;
+	font-size: 14pt;
 	line-height: 3rem;
 	color: #6e6e6e;
 }
@@ -116,7 +120,7 @@ h5, .h05, h6, .h06 {
 	margin-bottom: 1.2rem;
 }
 h1, .h01 {
-	font-size: 3.1rem;
+	font-size: 18pt;
 	line-height: 1.355;
 	letter-spacing: -.1rem;
 }
@@ -127,25 +131,25 @@ h1, .h01 {
 	}
 }
 h2, .h02 {
-	font-size: 2.4rem;
+	font-size: 16pt;
 	line-height: 1.25;
 }
 h3, .h03 {
-	font-size: 2rem;
+	font-size: 14pt;
 	line-height: 1.5;
 }
 h4, .h04 {
-	font-size: 1.7rem;
+	font-size: 12pt;
 	line-height: 1.765;
 }
 h5, .h05 {
-	font-size: 1.4rem;
+	font-size: 10pt;
 	line-height: 1.714;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 }
 h6, .h06 {
-	font-size: 1.3rem;
+	font-size: 8pt;
 	line-height: 1.846;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
@@ -155,7 +159,7 @@ p img {
 }
 p.lead {
 	font-family: "lora-regular", serif;
-	font-size: 2rem;
+	font-size: 10pt;
 	line-height: 1.8;
 	color: #888888;
 }
@@ -165,7 +169,7 @@ p.lead {
 	}
 }
 em, i, strong, b {
-	font-size: 1.7rem;
+	font-size: 12pt;
 	line-height: 3rem;
 	font-style: normal;
 	font-weight: normal;
@@ -177,7 +181,7 @@ strong, b {
 	font-family: "lora-bold", serif;
 }
 small {
-	font-size: 1.2rem;
+	font-size: 10pt;
 	line-height: inherit;
 }
 blockquote {
@@ -187,7 +191,7 @@ blockquote {
 }
 blockquote:before {
 	content: "\201C";
-	font-size: 8rem;
+	font-size: 20pt;
 	line-height: 0px;
 	margin: 0;
 	color: #313131;
@@ -200,12 +204,12 @@ blockquote p {
 	font-family: georgia, serif;
 	font-style: italic;
 	padding: 0;
-	font-size: 1.9rem;
+	font-size: 12pt;
 	line-height: 1.737;
 }
 blockquote cite {
 	display: block;
-	font-size: 1.3rem;
+	font-size: 10pt;
 	font-style: normal;
 	line-height: 1.616;
 }
@@ -231,7 +235,7 @@ pre {
 	background: #F1F1F1;
 }
 code {
-	font-size: 1.4rem;
+	font-size: 12pt;
 	margin: 0 .2rem;
 	padding: .3rem .6rem;
 	white-space: nowrap;
@@ -373,7 +377,7 @@ dl,
 form,
 .fluid-video-wrapper,
 .ss-custom-select {
-	margin-bottom: 3rem;
+	margin-bottom: 5pt;
 }
 
 /**
@@ -528,7 +532,7 @@ select {
 	vertical-align: middle;
 	color: #313131;
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
+	font-size: 12pt;
 	line-height: 3rem;
 	max-width: 100%;
 	background: transparent;
@@ -573,7 +577,7 @@ select {
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
-	font-size: 18px;
+	font-size: 12pt;
 	text-align: center;
 	pointer-events: none;
 	color: #252525;
@@ -600,7 +604,7 @@ select:focus {
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.4rem;
+	font-size: 12pt;
 	margin-bottom: .6rem;
 	color: #3b3b3b;
 	display: block;
@@ -654,7 +658,7 @@ input[type="reset"],
 input[type="button"] {
 	display: inline-block;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.4rem;
+	font-size: 12pt;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
 	height: 5.4rem;
@@ -763,7 +767,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 3rem;
 	border-radius: 3px;
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.5rem;
+	font-size: 12pt;
 }
 .alert-box .close {
 	position: absolute;
@@ -800,7 +804,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	float: left;
 	margin: 0;
 	padding: 1.5rem .6rem 0 0;
-	font-size: 8.4rem;
+	font-size: 22pt;
 	font-family: "poppins-bold", sans-serif;
 	line-height: 6rem;
 	text-indent: 0;
@@ -869,7 +873,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .pull-quote:before, .pull-quote:after {
 	height: 1em;
 	position: absolute;
-	font-size: 8rem;
+	font-size: 22pt;
 	font-family: Arial, Sans-Serif;
 	color: #333;
 }
@@ -920,7 +924,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .stats-tabs li a {
 	display: inline-block;
-	font-size: 2.5rem;
+	font-size: 16pt;
 	font-family: "poppins-bold", sans-serif;
 	border: none;
 	color: #252525;
@@ -931,7 +935,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a em {
 	display: block;
 	margin: .6rem 0 0 0;
-	font-size: 1.4rem;
+	font-size: 12pt;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
 }
@@ -960,7 +964,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 12pt;
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
@@ -975,7 +979,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: white;
-	font-size: 1.1rem;
+	font-size: 10pt;
 	line-height: 1;
 	background: #313131;
 	padding: .6rem .6rem;
@@ -1040,19 +1044,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin-bottom: 3.6rem;
 	position: relative;
 }
 .section-intro h1 {
 	font-family: "poppins-semibold", serif;
-	font-size: 3.6rem;
+	font-size: 16pt;
 	color: #313131;
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
 	color: #FF0077;
-	font-size: 1.6rem;
+	font-size: 12pt;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
@@ -1231,7 +1234,7 @@ header .logo a {
 	display: block;
 	width: 100%;
 	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
+	font-size: 12pt;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -1316,16 +1319,6 @@ header .logo a {
 	position: relative;
 	text-align: center;
 }
-#intro .intro-downloads {
-	margin-top: 15px;
-	text-align: center;
-	align: center;
-}
-#intro .intro-downloads h3{
-	color: #cc005f;
-	text-transform: uppercase;
-	margin-bottom: 0;
-}
 .intro-overlay {
 	position: absolute;
 	top: 0;
@@ -1347,7 +1340,7 @@ header .logo a {
 .intro-content h1 {
 	color: #FFFFFF;
 	font-family: "poppins-medium", sans-serif;
-	font-size: 8.4rem;
+	font-size: 22pt;
 	line-height: 1.071;
 	max-width: 900px;
 	margin-top: 0;
@@ -1359,7 +1352,7 @@ header .logo a {
 .intro-content h5 {
 	color: #cc005f;
 	font-family: "poppins-bold", sans-serif;
-	font-size: 2.3rem;
+	font-size: 16pt;
 	line-height: 1.565;
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -1368,7 +1361,7 @@ header .logo a {
 }
 .intro-content .intro-position {
 	font-family: "lora-regular", serif;
-	font-size: 1.7rem;
+	font-size: 14pt;
 	line-height: 2.4rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -1399,7 +1392,7 @@ header .logo a {
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
 	margin-top: .6rem;
-	font-size: 1.3rem;
+	font-size: 12pt;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -1410,7 +1403,7 @@ header .logo a {
 	display: inline-block;
 	content: "\f107";
 	font-family: fontAwesome;
-	font-size: 1.6rem;
+	font-size: 14pt;
 	line-height: inherit;
 	text-align: center;
 	position: relative;
@@ -1423,7 +1416,7 @@ header .logo a {
 	width: 100%;
 	left: 0;
 	bottom: 7.2rem;
-	font-size: 3.3rem;
+	font-size: 16pt;
 	margin: 0;
 	padding: 0;
 }
@@ -1517,17 +1510,23 @@ header .logo a {
 #about .section-intro {
 	margin-bottom: 3rem;
 }
+#about h1 {
+	font-size: 20pt;
+}
 .intro-info {
 	margin-top: 4.2rem;
-	margin-right: -30px;
-	margin-left: -30px;
+	margin-right: -75px;
+	margin-left: -75px;
 }
 .intro-info img {
-	height: 9rem;
-	width: 9rem;
+	height: 110px;
+	width: 110px;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
+	margin: 0 0 0 0;
 	float: left;
+}
+.intro-info p {
+	font-size: 15pt;
 }
 .intro-info .lead {
 	text-align: left;
@@ -1538,11 +1537,12 @@ header .logo a {
 	position: relative;
 	text-align: center;
 	max-width: 850px;
-	margin-bottom: 3.6rem;
+	margin-top: 75px;
+	margin-bottom: 0;
 }
 .about-content h3 {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
+	font-size: 18pt;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -1559,14 +1559,14 @@ header .logo a {
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 15pt;
 	line-height: 3rem;
 }
 .about-content .info-list li span {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
-	font-size: 1.5rem;
+	font-size: 13pt;
 	line-height: 1;
 }
 .about-content .info-list lit {
@@ -1578,14 +1578,14 @@ header .logo a {
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	font-size: 1.5rem;
+	font-size: 15pt;
 	line-height: 3rem;
 }
 .about-content .info-list lit span {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
-	font-size: 1.5rem;
+	font-size: 13pt;
 	line-height: 2;
 }
 .about-content .skill-bars {
@@ -1659,12 +1659,16 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #resume {
-	padding-top: 12rem;
 	padding-bottom: 12rem;
+	background: #FFFFFF;
+	break-before: page;
 }
 
 #resume .resume-header {
 	text-align: center;
+}
+#resume .resume-header h1 {
+	font-size:20pt;
 }
 #resume .resume-header h2 {
 	color: #FF0077;
@@ -1680,12 +1684,12 @@ header .logo a {
 }
 #resume .timeline-wrap::before {
 	content: "";
-	display: block;
+	display: none;
 	width: 1px;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
-	left: 35%;
+	left: 5%;
 	top: 0;
 }
 #resume .timeline-block {
@@ -1701,8 +1705,7 @@ header .logo a {
 	text-align: center;
 	color: #FFFFFF;
 	position: absolute;
-	left: 35%;
-	top: .9rem;
+	left: 5%;
 	margin-left: -2.4rem;
 }
 #resume .timeline-ico i {
@@ -1712,36 +1715,48 @@ header .logo a {
 }
 
 #resume .timeline-header {
-	float: left;
-	width: 35%;
-	padding-right: 90px;
-	text-align: right;
+	margin-left: 10%;
+	text-align: left;
 }
 #resume .timeline-header h3 {
+	position: relative;
 	margin-bottom: 0;
 }
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.6rem;
+	font-size: 12pt;
 	color: #888888;
 }
 #resume .timeline-content {
-	margin-left: 35%;
-	padding-left: 60px;
+	margin-left: 10%;
+	text-align: left;
+}
+#resume .timeline-project {
+	break-inside: avoid;
+}
+#resume .timeline-project h5 {
+	font-size: 12pt;
+	margin-bottom: 0;
+}
+#resume .timeline-project li {
+	font-size: 13pt;
+}
+#resume .timeline-project li-noprint {
+	display: none;
 }
 #resume .timeline-content h4 {
 	position: relative;
-	padding-bottom: 1.8rem;
+	font-size: 13pt;
+	margin-bottom: 5px;
 }
 #resume .timeline-content h4::after {
 	content: "";
 	display: block;
-	height: 3px;
-	width: 50px;
+	height: 3pt;
+	width: 850px;
 	background: rgba(0, 0, 0, 0.2);
-	position: absolute;
-	left: 0;
-	bottom: 0;
+	position: relative;
+	
 }
 
 /**
@@ -1828,10 +1843,12 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	padding-top: 12rem;
 	padding-bottom: 12rem;
+	break-before: page;
 }
-
+#portfolio h1 {
+	font-size: 20pt;
+}
 #portfolio .portfolio-header {
 	text-align: center;
 }
@@ -1849,12 +1866,12 @@ header .logo a {
 }
 #portfolio .timeline-wrap::before {
 	content: "";
-	display: block;
+	display: none;
 	width: 1px;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
-	left: 35%;
+	left: 5%;
 	top: 0;
 }
 #portfolio .timeline-block {
@@ -1870,7 +1887,7 @@ header .logo a {
 	text-align: center;
 	color: #FFFFFF;
 	position: absolute;
-	left: 35%;
+	left: 5%;
 	top: .9rem;
 	margin-left: -2.4rem;
 }
@@ -1881,32 +1898,44 @@ header .logo a {
 }
 
 #portfolio .timeline-header {
-	float: left;
-	width: 35%;
-	padding-right: 90px;
-	text-align: right;
+	margin-left: 10%;
+	text-align: left;
 }
 #portfolio .timeline-header h3 {
 	margin-bottom: 0;
 }
 #portfolio .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.6rem;
+	font-size: 12pt;
 	color: #888888;
 }
 #portfolio .timeline-content {
-	margin-left: 35%;
-	padding-left: 60px;
+	margin-left: 10%;
+	text-align: left;
+}
+
+#portfolio .timeline-project {
+	break-inside: avoid;
+}
+#portfolio .timeline-project h5 {
+	font-size: 12pt;
+	margin-bottom: 0;
+}
+#portfolio .timeline-project li {
+	font-size: 13pt;
+}
+#portfolio .timeline-project li-noprint {
+	display: none;
 }
 #portfolio .timeline-content h4 {
 	position: relative;
-	padding-bottom: 1.8rem;
+	padding-bottom: 5px;
 }
 #portfolio .timeline-content h4::after {
 	content: "";
 	display: block;
-	height: 3px;
-	width: 50px;
+	height: 3pt;
+	width: 850px;
 	background: rgba(0, 0, 0, 0.2);
 	position: absolute;
 	left: 0;
@@ -2010,19 +2039,19 @@ header .logo a {
 }
 .popup-modal .description-box h4 {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.5rem;
+	font-size: 12pt;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
 }
 .popup-modal .description-box p {
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.4rem;
+	font-size: 12pt;
 	line-height: 2.4rem;
 	margin-bottom: 12px;
 }
 .popup-modal .categories {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.1rem;
+	font-size: 10pt;
 	line-height: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
@@ -2037,7 +2066,7 @@ header .logo a {
 }
 .popup-modal .link-box a {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.2rem;
+	font-size: 10pt;
 	line-height: 6rem;
 	color: #FFFFFF;
 	text-transform: uppercase;
@@ -2244,7 +2273,7 @@ header .logo a {
 	margin-bottom: 2.1rem;
 }
 .services-list .icon i {
-	font-size: 5.4rem;
+	font-size: 22pt;
 	color: #FF0077;
 }
 .services-list h3 {
@@ -2300,12 +2329,12 @@ header .logo a {
 	border: none;
 }
 #stats .icon-part i {
-	font-size: 4.8rem;
+	font-size: 18pt;
 	color: #000000;
 }
 #stats .stat-count {
 	color: #FFFFFF;
-	font-size: 3.6rem;
+	font-size: 16pt;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
 	font-family: "poppins-medium", sans-serif;
@@ -2593,7 +2622,7 @@ header .logo a {
  */
 footer {
 	padding-bottom: 3rem;
-	font-size: 1.4rem;
+	font-size: 12pt;
 	font-family: "poppins-regular", sans-serif;
 }
 footer a, footer a:visited {
@@ -2610,7 +2639,7 @@ footer .social {
 }
 footer .footer-social {
 	display: inline-block;
-	font-size: 2.1rem;
+	font-size: 14pt;
 	margin: 0;
 	padding: 0;
 	position: relative;

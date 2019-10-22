@@ -19,6 +19,7 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/printmain.css">
    <link rel="stylesheet" href="css/vendor.css">     
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    <!-- script
@@ -48,14 +49,14 @@
 		    </div>      
 
 		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-					</ul>
-				</nav>    		
+				<ul class="main-navigation">
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+					<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+					<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+					<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+					<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+				</ul>
+			</nav>    		
    		</div> <!-- /top-bar --> 
    		
    	</div> <!-- /row --> 		
@@ -63,371 +64,374 @@
 
 	<!-- intro section
    ================================================== -->
-   <section id="intro">   
+   <introSection>
+		<section id="intro"> 
+			<div class="intro-overlay"></div>	
+		
+			<div class="intro-content">
+				<div class="row">
+		
+					<div class="col-twelve">
+		
+						<h5>Hello, World.</h5>
+						<h1>I'm Nilesh Krishnan.</h1>
+		
+						<p class="intro-position">
+							<i class="fas fa-cat fa-2x" style="color: Grey;"></i>
+							<span></span>
+							<span>Game Developer</span>
+							<span>Gameplay</span>
+							<span>UI</span>
+							<span>Tools</span>
+							<i class="fas fa-cat fa-2x fa-flip-horizontal" style="color: Orange;"></i>
+						</p>
+					</div>  
+				</div>
 
-   	<div class="intro-overlay"></div>	
-
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Nilesh Krishnan.</h1>
-
-	   			<p class="intro-position">
-					<i class="fas fa-cat fa-2x" style="color: Grey;"></i>
-					<span></span>
-	   				<span>Game Developer</span>
-	   				<span>Gameplay</span>
-					<span>UI</span>
-					<span>Tools</span>
-					<i class="fas fa-cat fa-2x fa-flip-horizontal" style="color: Orange;"></i>
-	   			</p>
-
-				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me <i class="fa fa-paper-plane fa-lg"></i></a>
-				<a href="files/NileshKrishnan_Resume.pdf" title="Download CV" class="button button-primary">Download Resume <i class="fa fa-download fa-lg"></i></a>
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">        
-         <li><a href="https://github.com/Niluk93"><i class="fab fa-github fa-lg"></i></a></li>
-         <li><a href="https://www.linkedin.com/in/nilesh-krishnan-58501667"><i class="fab fa-linkedin fa-lg"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
+				<div class="row intro-downloads">
+					<div class="col-six tab-full">
+						<h3>Resume</h3>
+						<a href="files/NileshKrishnan_Resume.pdf" title="Download CV" class="button stroke">Short <i class="fa fa-download fa-lg"></i></a>
+						<a href="files/NileshKrishnan_CV.pdf" title="Download CV" class="button stroke">Full <i class="fa fa-download fa-lg"></i></a>
+					</div>
+					
+					<div class="col-six tab-full">
+						<h3>Contact Me</h3>
+						<a href="#contact" title="Hire Me" class="button stroke smoothscroll">E-mail <i class="fa fa-paper-plane fa-lg"></i></a>				
+					</div>
+				</div>  
+			</div> <!-- /intro-content --> 
+		
+			<ul class="intro-social">        
+				<li><a href="https://github.com/Niluk93"><i class="fab fa-github fa-lg"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/nilesh-krishnan-58501667"><i class="fab fa-linkedin fa-lg"></i></a></li>
+			</ul> <!-- /intro-social -->      	
+		
+		</section> <!-- /intro -->
+   </introSection>
 
 
    <!-- about section
    ================================================== -->
-   <section id="about">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
-
-   				<p class="lead">I'm passionate about board games and video games, and have been developing the latter for about 5 years. My interests primarily lie in implementing and maintaining gameplay systems and tools.</p>
-   			</div>   			
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong></dt>
-   					<span>Nilesh Krishnan</span></dd>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<span>niluk93@gmail.com</span>
-   				</li>
-   				<li>
-   					<strong>Job:</strong>
-   					<span>Game Programmer, Sumo Video Games</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>21 November 1993</span>
-   				</li>
-
-   			</ul> <!-- /info-list -->
-
-   		</div>
-
-   		<div class="col-six tab-full">
-
-   			<h3>Skills</h3>
-				<ul class="info-list">
-					<lit>
-						<strong>Proficient :</strong>
-						<span>C++</span>
-						<span>C#</span>
-						<span>Unreal Engine</span>
-						<span>Gameplay</span>
-						<span>UI</span>
-					</lit>
-					<lit>
-						<strong>Familiar :</strong>
-						<span>Java</span>
-						<span>Unity Engine</span>
-						<span>Tools</span>
-					</lit>
-				</ul> <!-- /info-list -->	
-   		</div>
-   	</div>
-   </section> <!-- /process-->    
+	<aboutSection>
+		<section id="about">  
+	
+			<div class="row section-intro">
+				<div class="col-twelve">
+	
+					<h5>About</h5>
+					<h1>Let me introduce myself.</h1>
+	
+					<div class="intro-info">
+	
+						<img src="images/profile-pic.jpg" alt="Profile Picture">
+	
+						<p class="lead">I'm passionate about board games and video games, and have been developing the latter for about 5 years. My interests primarily lie in implementing and maintaining gameplay systems and tools.</p>
+					</div>   			
+	
+				</div>   		
+			</div> <!-- /section-intro -->
+	
+			<div class="row about-content">
+				<div class="col-six tab-full">
+					<h3>Profile</h3>
+					<ul class="info-list">
+						<li>
+							<strong>Fullname:</strong></dt>
+							<span>Nilesh Krishnan</span></dd>
+						</li>
+						<li>
+							<strong>Email:</strong>
+							<span>niluk93@gmail.com</span>
+						</li>
+						<li>
+							<strong>Current Role:</strong>
+							<span>Programmer, A44 Games</span>
+						</li>
+						<li>
+							<strong>Birth Date:</strong>
+							<span>21 November 1993</span>
+						</li>
+					</ul> <!-- /info-list -->
+				</div>
+	
+				<div class="col-six tab-full">
+	
+					<h3>Skills</h3>
+					<ul class="info-list">
+						<lit>
+							<strong>Proficient :</strong>
+							<span>C++</span>
+							<span>C#</span>
+							<span>Unreal Engine</span>
+							<span>Gameplay</span>
+							<span>UI</span>
+						</lit>
+						<lit>
+							<strong>Familiar :</strong>
+							<span>Java</span>
+							<span>Unity Engine</span>
+							<span>Tools</span>
+						</lit>
+					</ul> <!-- /info-list -->	
+				</div>
+			</div>
+		</section> <!-- /about-->    
+	</aboutSection>
 
 
    <!-- resume Section
    ================================================== -->
-	<section id="resume" class="grey-section">
+	<resumeSection>
+		<section id="resume" class="grey-section">
 
-	<div class="row section-intro">
-   		<div class="col-twelve">
+		<div class="row section-intro">
+			<div class="col-twelve">
 
-   			<h5>Resume</h5>
+				<h5>Resume</h5>
 
-   			<p class="lead"> </p>
+				<p class="lead"> </p>
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+			</div>   		
+		</div> <!-- /section-intro--> 
 
-   	<div class="row resume-timeline">
+		<div class="row resume-timeline">
 
-   		<div class="col-twelve resume-header">
+			<div class="col-twelve resume-header">
+				<h1>Work Experience</h1>
+			</div> <!-- /resume-header -->
 
-   			<h2>Work Experience</h2>
+			<div class="col-twelve">
+				<div class="timeline-wrap">
+					<div class="timeline-block">
 
-   		</div> <!-- /resume-header -->
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase fa-lg"></i>
+						</div>
 
-   		<div class="col-twelve">
-   			<div class="timeline-wrap">
-				<div class="timeline-block">
+						<div class="timeline-header">
+							<h3><a href="https://www.a44games.com/" target="_blank">A44 Games</a></h3>
+							<p>September 2019 - Present</p>
+						</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase fa-lg"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Game Programmer</h3>
-	   					<p>September 2019 - Present</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="https://www.a44games.com/" target="_blank">A44 Games</a></h4>
-	   					<p>At A44 Games, I am working on an unannounced title as a game programmer.</p>
-						<div>
-							<h5><a href="#" target="_blank"><b><u>Unannounced Project (2 Months)</u></b></a></h5>
+						<div class="timeline-content">
+							<h4>Programmer</h4>
+							<p>At A44 Games, I am working on an unannounced title as a programmer.</p>
 							<div>
-								<h5> Unreal Engine - C++ </h5>
-								<h5> 
-									Target Platforms - TBA
-								</h5>
+								<h5><a href="#" target="_blank"><b><u>Unannounced Project (2 Months)</u></b></a></h5>
+								<div>
+									<h5> Unreal Engine - C++ </h5>
+									<h5> 
+										Target Platforms - TBA
+									</h5>
+								</div>
+								<ul>
+									<li>Working as a gameplay and AI programmer for the project.</li>
+								</ul>
 							</div>
-							<ul>
-								<li>Working as a gameplay and AI programmer for the project.</li>
-							</ul>
 						</div>
-	   				</div>
-				</div> <!-- /timeline-block -->
+					</div> <!-- /timeline-block -->
 
-   				<div class="timeline-block">
+					<div class="timeline-block">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase fa-lg"></i>
-	   				</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase fa-lg"></i>
+						</div>
 
-	   				<div class="timeline-header">
-	   					<h3>Game Programmer</h3>
-	   					<p>July 2016 - September 2019</p>
-	   				</div>
+						<div class="timeline-header">
+							<h3><a href="http://www.sumo-digital.com/" target="_blank">Sumo Video Games</a></h3>
+							<p>July 2016 - September 2019</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4><a href="http://www.sumo-digital.com/" target="_blank">Sumo Video Games Pvt Ltd</a></h4>
-	   					<p>At Sumo digital, I have worked on multiple projects spanning a wide array of platforms and taken up responsibilities across various levels of seniority.</p>
-						<div>
-							<h5><a href="#" target="_blank"><b><u>Unannounced Project (9 Months)</u></b></a></h5>
-							<div>
-								<h5> Unreal Engine - C++ </h5>
-								<h5> 
-									Target Platforms -
-									<i class="fab fa-apple fa-2x" title="Apple Arcade"></i>
-								</h5>
+						<div class="timeline-content">
+							<h4>Game Programmer</h4>
+							<p>At Sumo digital, I have worked on multiple projects spanning a wide array of platforms and taken up responsibilities across various levels of seniority.</p>
+							<div class="timeline-project">
+								<h5><a href="#" target="_blank"><b><u>Unannounced Project (9 Months)</u></b></a></h5>
+								<div>
+									<h5> Unreal Engine - C++ </h5>
+									<h5> 
+										Target Platforms -
+										<i class="fab fa-apple fa-2x" title="Apple Arcade"></i>
+									</h5>
+								</div>
+								<ul>
+									<li>Worked as part of the gameplay 3Cs team to develop the camera systems.</li>
+									<li>Created various gameplay mechanics to be used by designers to set up micro-experiences in the game for the player.</li>
+									<li>Developed a robust save game system to be used by the entire game, along with cloud save and sync support.</li>
+								</ul>
 							</div>
-							<ul>
-								<li>Worked as part of the gameplay 3Cs team (Character, Camera, Controls).</li>
-								<li>Responsible for developing and maintaining the camera and camera controls systems for the project.</li>
-								<li>Created various gameplay mechanics to be used by designers to set up micro-experiences in the game for the player.</li>
-								<li>Developed a robust save game system to be used by the entire game, along with cloud save and sync support.</li>
-							</ul>
-						</div>
-						<div>
-							<h5><a href="https://www.sonicthehedgehog.com/teamsonicracing" target="_blank"><b><u>Team Sonic Racing (11 Months)</u></b></a></h5>
-							<div>
-								<h5> Custom Engine - C++ </h5>
-								<h5> 
-									Target Platforms - 
-									<i class="fab fa-windows fa-2x" title="Microsoft Windows"></i> 
-									<i class="fab fa-steam fa-2x" title="Steam"></i> 
-									<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
-									<i class="fab fa-xbox fa-2x" title="XBox One"></i> 
-									<i class="fab fa-nintendo-switch fa-2x" title="Nintendo Switch"></i> 
-								</h5>
+							<div class="timeline-project">
+								<h5><a href="https://www.sonicthehedgehog.com/teamsonicracing" target="_blank"><b><u>Team Sonic Racing (11 Months)</u></b></a></h5>
+								<div>
+									<h5> Custom Engine - C++ </h5>
+									<h5> 
+										Target Platforms - 
+										<i class="fab fa-windows fa-2x" title="Microsoft Windows"></i> 
+										<i class="fab fa-steam fa-2x" title="Steam"></i> 
+										<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
+										<i class="fab fa-xbox fa-2x" title="XBox One"></i> 
+										<i class="fab fa-nintendo-switch fa-2x" title="Nintendo Switch"></i> 
+									</h5>
+								</div>
+								<ul>
+									<li>Developed multiple racing game modes for the game.</li>
+									<li-noprint>Wrote tools that were used by the design team to set up different types of skid mark effects for tires.</li-noprint>
+									<li>Worked on surfaces that blends various car handling effects when a racer moves between two surfaces.</li>
+									<li-noprint>Added support for gamepad vibrations using WWise for PS4, XBox One and PC.</li-noprint>
+									<li>Updated the engine's UI tools to add support for rendering 3D models to the UI.</li>
+								</ul>
 							</div>
-							<ul>
-								<li>Developed multiple racing game modes for the game.</li>
-								<li>Wrote tools that were used by the design team to set up different types of skid mark effects for tires.</li>
-								<li>Worked on surfaces that blends various car controlling effects as a racer moves between two surfaces.</li>
-								<li>Added support for gamepad vibrations using WWise for PS4, XBox One and PC.</li>
-								<li>Updated the engine's UI tools to add support for rendering 3D models to the UI.</li>
-							</ul>
-						</div>
-						<div>
-							<h5><a href="http://www.snake-pass.com" target="_blank"><b><u>Snake Pass (1 Month)</u></b></a></h5>
-							<div>
-								<h5> Unreal Engine - C++ </h5>
-								<h5> 
-									Target Platforms - 
-									<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
-									<i class="fab fa-nintendo-switch fa-2x" title="Nintendo Switch"></i> 
-								</h5>
+							<div class="timeline-project">
+								<h5><a href="http://www.snake-pass.com" target="_blank"><b><u>Snake Pass (1 Month)</u></b></a></h5>
+								<div>
+									<h5> Unreal Engine - C++ </h5>
+									<h5> 
+										Target Platforms - 
+										<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
+										<i class="fab fa-nintendo-switch fa-2x" title="Nintendo Switch"></i> 
+									</h5>
+								</div>
+								<ul>
+									<li>Worked on creating a localised Japanese build for the game.</li>
+									<li>Responsible for managing the build machine and delivering the builds on PS4 and Switch.</li>
+									<li-noprint>Modified Unreal Engine's startup video player to support video specifications required by the publisher.</li-noprint>
+								</ul>
 							</div>
-							<ul>
-								<li>Worked on creating a localised Japanese build for the game.</li>
-								<li>Responsible for managing the build machine and delivering the builds on PS4 and Switch.</li>
-								<li>Modified Unreal Engine's startup video player to support video specifications required by the publisher.</li>
-							</ul>
-						</div>
-						<div>
-							<h5><a href="http://www.nobrakesgames.com/human/" target="_blank"><b><u>Human Fall Flat (2 Months)</u></b></a></h5>
-							<div>
-								<h5> Unity - C# </h5>
-								<h5> 
-									Target Platforms - 
-									<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
-									<i class="fab fa-xbox fa-2x" title="XBox One"></i> 
-									<i class="fab fa-nintendo-switch fa-2x" title="Nintendo Switch"></i> 
-								</h5>
+							<div class="timeline-project">
+								<h5><a href="http://www.nobrakesgames.com/human/" target="_blank"><b><u>Human Fall Flat (2 Months)</u></b></a></h5>
+								<div>
+									<h5> Unity - C# </h5>
+									<h5> 
+										Target Platforms - 
+										<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
+										<i class="fab fa-xbox fa-2x" title="XBox One"></i> 
+										<i class="fab fa-nintendo-switch fa-2x" title="Nintendo Switch"></i> 
+									</h5>
+								</div>
+								<ul>
+									<li>Lead the development team in the Indian studio.</li>
+									<li>Developed a library that handled platform specific functionality for Input, Save System, Achievements, Users and Game Events.</li>
+									<li>Wrote the game's voice chat system for PS4.</li>
+								</ul>
 							</div>
-							<ul>
-								<li>Lead the development team in the Indian studio.</li>
-								<li>Developed a library that handled platform specific functionality for Input, Save System, Achievements, Users and Game Events.</li>
-								<li>Wrote the game's voice chat system for PS4.</li>
-							</ul>
-						</div>
-						<div>
-							<h5><a href="#" target="_blank"><b><u>Unannounced Project (1 Year 2 Months)</u></b></a></h5>
-							<div>
-								<h5> Unreal Engine - C++ </h5>
-								<h5> 
-									Target Platforms - 
-									<i class="fab fa-windows fa-2x" title="Microsoft Windows"></i> 
-									<i class="fab fa-steam fa-2x" title="Steam"></i> 
-									<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
-									<i class="fab fa-xbox fa-2x" title="XBox One"></i> 
-								</h5>
+							<div class="timeline-project">
+								<h5><a href="#" target="_blank"><b><u>Unannounced Project (1 Year 2 Months)</u></b></a></h5>
+								<div>
+									<h5> Unreal Engine - C++ </h5>
+									<h5> 
+										Target Platforms - 
+										<i class="fab fa-windows fa-2x" title="Microsoft Windows"></i> 
+										<i class="fab fa-steam fa-2x" title="Steam"></i> 
+										<i class="fab fa-playstation fa-2x" title="Playstation 4"></i> 
+										<i class="fab fa-xbox fa-2x" title="XBox One"></i> 
+									</h5>
+								</div>
+								<ul>
+									<li>Responsible for developing the game's economy and loot system.</li>
+									<li>Developed the system to handle 2D contextual UI in 3D world space, along with networking support.</li>
+									<li-noprint>Improved Unreal Engine's Animation System to allow tagging keyframes.</li-noprint>
+									<li>Wrote an editor script to replace/remove all references to a variable or a function call in blueprints.</li>
+									<li-noprint>Contributed to the development of a debug visualizer tool that could be easily plugged into any game system.</li-noprint>
+									<li-noprint>Improved the UI code architecture to reduce the UI memory footprint.</li-noprint>
+									<li-noprint>Developed the game's framework to handle mouse inputs in a UI screen.</li-noprint>
+								</ul>
 							</div>
-							<ul>
-								<li>Responsible for developing the game's economy and loot system, and associated editor tools.</li>
-								<li>Developed the system to handle 2D contextual UI in 3D world space, along with networking support.</li>
-								<li>Improved Unreal Engine's Animation System to allow tagging keyframes.</li>
-								<li>Wrote an editor script to replace/remove all references to a variable or a function call in blueprints.</li>
-								<li>Contributed to the development of a debug visualizer tool that could be easily plugged into any game system.</li>
-								<li>Improved the UI code architecture to reduce the UI memory footprint.</li>
-								<li>Developed the game's framework to handle mouse inputs in a UI screen.</li>
-							</ul>
 						</div>
-	   				</div>
-				</div> <!-- /timeline-block -->
+					</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
+					<div class="timeline-block">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase fa-lg"></i>
-	   				</div>
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase fa-lg"></i>
+						</div>
 
-					<div class="timeline-header">
-	   					<h3>Software Engineer</h3>
-	   					<p>Jan 2014 - Feb 2016</p>
-	   				</div>
+						<div class="timeline-header">
+							<h3><a href="https://purpletalk.com/" target="_blank">PurpleTalk</a></h3>
+							<p>Jan 2014 - Feb 2016</p>
+						</div>
 
-	   				<div class="timeline-content">
-	   					<h4><a href="https://purpletalk.com/" target="_blank">PurpleTalk India Pvt Ltd</a></h4>
-	   					<p>At PurpleTalk, I worked on multiple projects on mobile platforms. I owned and delivered many of the games' major features.</p>
-						<div>
-							<h5><a href="#" target="_blank"><b><u>Ride 'em Rigby (2 Months)</u></b></a></h5>
-							<div>
-								<h5> Unity - C# </h5>
-								<h5> 
-									Target Platforms - 
-									<i class="fab fa-app-store-ios fa-2x" title="iOS AppStore"></i> 
-									<i class="fab fa-google-play fa-2x" title="Google Play"></i> 
-								</h5>
+						<div class="timeline-content">
+							<h4>Software Engineer</h4>
+							<p>At PurpleTalk, I worked on multiple projects on mobile platforms. I owned and delivered many of the games' major features.</p>
+							<div class="timeline-project">
+								<h5><a href="#" target="_blank"><b><u>Ride 'em Rigby (2 Months)</u></b></a></h5>
+								<div>
+									<h5> Unity - C# </h5>
+									<h5> 
+										Target Platforms - 
+										<i class="fab fa-app-store-ios fa-2x" title="iOS AppStore"></i> 
+										<i class="fab fa-google-play fa-2x" title="Google Play"></i> 
+									</h5>
+								</div>
+								<ul>
+									<li>Optimized the existing game code in order to provide support for low end devices.</li>
+									<li>Fixed a lot of bugs to ensure stable build.</li>
+								</ul>
 							</div>
-							<ul>
-								<li>Optimized the existing game code in order to provide support for low end devices.</li>
-								<li>Fixed a lot of bugs to ensure stable build.</li>
-							</ul>
-						</div>
-						<div>
-							<h5><a href="#" target="_blank"><b><u>Star Trek - Trexels (1 Year 10 Months)</u></b></a></h5>
-							<div>
-								<h5> Unity - C# </h5>
-								<h5> 
-									Target Platforms - 
-									<i class="fab fa-app-store-ios fa-2x" title="iOS AppStore"></i> 
-									<i class="fab fa-google-play fa-2x" title="Google Play"></i> 
-								</h5>
+							<div class="timeline-project">
+								<h5><a href="#" target="_blank"><b><u>Star Trek - Trexels (1 Year 10 Months)</u></b></a></h5>
+								<div>
+									<h5> Unity - C# </h5>
+									<h5> 
+										Target Platforms - 
+										<i class="fab fa-app-store-ios fa-2x" title="iOS AppStore"></i> 
+										<i class="fab fa-google-play fa-2x" title="Google Play"></i> 
+									</h5>
+								</div>
+								<ul>
+									<li>Developed the game AI and the exploration half of the gameplay.</li>
+									<li>Created tools to help designers set up the in-game content.</li>
+									<li-noprint>Wrote code for the game to communicate with the server and load game data.</li-noprint>
+									<li-noprint>Optimized the game code to in order to support low end devices.</li-noprint>
+									<li>Wrote the networking code for a post-release multiplayer update.</li>
+								</ul>
 							</div>
-							<ul>
-								<li>Developed the game AI and the exploration half of the gameplay.</li>
-								<li>Created tools to help designers set up the in-game content.</li>
-								<li>Wrote code for the game to communicate with the server and load game data.</li>
-								<li>Optimized the game code to in order to support low end devices.</li>
-								<li>Wrote the networking code for a post-release multiplayer update.</li>
-							</ul>
 						</div>
-	   				</div>
-	   			</div> <!-- /timeline-block -->
+					</div> <!-- /timeline-block -->
 
-   			</div> <!-- /timeline-wrap -->   			
+				</div> <!-- /timeline-wrap -->   			
 
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
+			</div> <!-- /col-twelve -->
+			
+		</div> <!-- /resume-timeline -->
+		
+		<div class="row resume-timeline">
+			<div class="col-twelve resume-header">
+				<h1>Education</h1>
+			</div> <!-- /resume-header -->
 
-   		<div class="col-twelve resume-header">
+			<div class="col-twelve">
 
-   			<h2>Education</h2>
+				<div class="timeline-wrap">
 
-   		</div> <!-- /resume-header -->
+					<div class="timeline-block">
 
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap fa-lg"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Bachelor of Technology</h3>
-	   					<p>Aug 2011 - March 2015</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="http://www.backstagepass.co.in/" target="_blank">Backstage Pass - Institute of Gaming and Technology</a></h4>
-						<h5>Jawaharlal Nehru Technological University, Hyderabad</h5>
-	   					<div>
-							<ul>
-								<li>Made multiple small scale projects with batchmates from the art and design courses.</li>
-								<li>Worked on a 2D game engine with a classmate, using the SFML graphics library.</li>
-							</ul>
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap fa-lg"></i>
 						</div>
-	   				</div>
-	   			</div> <!-- /timeline-block -->
-   			</div> <!-- /timeline-wrap -->   			
-   		</div> <!-- /col-twelve -->
-   	</div> <!-- /resume-timeline -->
-	</section> <!-- /features -->
-	
+
+						<div class="timeline-header">
+							<h3><a href="http://www.backstagepass.co.in/" target="_blank">Backstage Pass - Institute of Gaming and Technology</a></h3>
+							<h4>Jawaharlal Nehru Technological University</h4>
+							<p>Aug 2011 - March 2015</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Bachelor of Technology</h4>
+							<div class="timeline-project">
+								<ul>
+									<li>Made multiple small scale projects with batchmates from the art and design courses.</li>
+									<li>Worked on a 2D game engine with a classmate, using the SFML graphics library.</li>
+								</ul>
+							</div>
+						</div>
+					</div> <!-- /timeline-block -->
+				</div> <!-- /timeline-wrap -->   			
+			</div> <!-- /col-twelve -->
+		</div> <!-- /resume-timeline -->
+		</section> <!-- /features -->
+	</resumeSection>	
 	<!--
 		https://fontawesome.com/how-to-use/on-the-web/setup/getting-started
 		style="font-size: 48px; color: Dodgerblue;"
@@ -467,156 +471,157 @@
 
 	<!-- Portfolio Section
    ================================================== -->
-	<section id="portfolio" class="white-section">
+   <portfolioSection>
+		<section id="portfolio" class="white-section">
 
-	<div class="row section-intro">
-   		<div class="col-twelve">
+		<div class="row section-intro">
+			<div class="col-twelve">
 
-   			<h5>Portfolio</h5>
-   			<h2>Personal Projects</h2>
+				<h5>Portfolio</h5>
+				<h1>Personal Projects</h1>
 
-   			<p class="lead"> </p>
+				<p class="lead"> </p>
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+			</div>   		
+		</div> <!-- /section-intro--> 
 
-	<div class="row portfolio-timeline">
-	
-		<div class="col-twelve">
+		<div class="row portfolio-timeline">
+		
+			<div class="col-twelve">
 
-   			<div class="timeline-wrap">
+				<div class="timeline-wrap">
 
-   				<div class="timeline-block">
+					<div class="timeline-block">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-gamepad fa-lg"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3><a href="https://github.com/Niluk93/SDLMatchThree" target="_blank">Match Three Game</a></h3>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>A simple match three game that I made over a week.</h4>
-						<div>
-							<div>
-								<h5> SDL Library - C++ </h5>
-							</div>
-							<ul>
-								<li>Wrote a wrapper over SDL to handle rendering, inputs and updates.</li>
-								<li>Demonstrates an understanding of core C++ concepts, such as templates, function pointers, STL and inheritance.</li>
-							</ul>
+						<div class="timeline-ico">
+							<i class="fa fa-gamepad fa-lg"></i>
 						</div>
-	   				</div>
-				</div> <!-- /timeline-block -->
-				
-				<div class="timeline-block">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-laptop-code fa-lg"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3><a href="https://github.com/Niluk93/ProjectBludgeon" target="_blank">SAGE Engine</a></h3>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>A 2D game engine that I developed during college in collaboration with a classmate.</h4>
-						<div>
-							<div>
-								<h5> SFML Library, Spine 2D, Tiled Editor, C++ </h5>
-							</div>
-							<ul>
-								<li>Wrote support to create, load and unload a scene in the engine.</li>
-								<li>Added support for 2D skeletal mesh animation using Spine 2D.</li>
-								<li>Added support for particle systems.</li>
-								<li>Created a few test scenes that demonstrates the use of tile maps, spine animations, sprites and resource managers.</li>
-							</ul>
+						<div class="timeline-header">
+							<h3><a href="https://github.com/Niluk93/SDLMatchThree" target="_blank">Match Three Game</a></h3>
 						</div>
-	   				</div>
-				</div> <!-- /timeline-block -->
-   			</div> <!-- /timeline-wrap -->   			
 
-   		</div> <!-- /col-twelve -->
-	</div> <!-- /resume-timeline -->
-	</section> <!-- /portfolio --> 
+						<div class="timeline-content">
+							<h4>A simple match three game that I made over a week.</h4>
+							<div class="timeline-project">
+								<div>
+									<h5> SDL Library - C++ </h5>
+								</div>
+								<ul>
+									<li>Wrote a wrapper over SDL to handle rendering, inputs and updates.</li>
+									<li>Demonstrates an understanding of core C++ concepts, such as templates, function pointers, STL and inheritance.</li>
+								</ul>
+							</div>
+						</div>
+					</div> <!-- /timeline-block -->
+					
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-code fa-lg"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3><a href="https://github.com/Niluk93/ProjectBludgeon" target="_blank">SAGE Engine</a></h3>
+						</div>
+
+						<div class="timeline-content">
+							<h4>A 2D game engine that I developed during college in collaboration with a classmate.</h4>
+							<div class="timeline-project">
+								<div>
+									<h5> SFML Library, Spine 2D, Tiled Editor, C++ </h5>
+								</div>
+								<ul>
+									<li>Wrote support to create, load and unload a scene in the engine.</li>
+									<li>Added support for 2D skeletal mesh animation using Spine 2D.</li>
+									<li>Added support for particle systems.</li>
+									<li>Created a few test scenes that demonstrates the use of tile maps, spine animations, sprites and resource managers.</li>
+								</ul>
+							</div>
+						</div>
+					</div> <!-- /timeline-block -->
+				</div> <!-- /timeline-wrap -->   			
+
+			</div> <!-- /col-twelve -->
+		</div> <!-- /resume-timeline -->
+		</section> <!-- /portfolio --> 
+	</portfolioSection>
 
    <!-- contact
    ================================================== -->
-	<section id="contact">
+	<contactSection>
+		<section id="contact">
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+			<div class="row section-intro">
+			<div class="col-twelve">
 
-   			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
+				<h5>Contact</h5>
+				<h1>I'd Love To Hear From You.</h1>
 
-   			<p class="lead">If you have a position that I might be fit for, or want to discuss anything about the work I've done, please feel free to reach out.</p>
+				<p class="lead">If you have a position that I might be fit for, or want to discuss anything about the work I've done, please feel free to reach out.</p>
 
-   		</div> 
-   	</div> <!-- /section-intro -->
+			</div> 
+		</div> <!-- /section-intro -->
 
-   	<div class="row contact-form">
+		<div class="row contact-form">
 
-   		<div class="col-twelve">
+			<div class="col-twelve">
 
-            <!-- form -->
-			<form action="https://formspree.io/niluk93@gmail.com" method="post">
-				<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-				<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-				<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-				<button class="submitform">Submit</button>
-			</form>
+				<!-- form -->
+				<form action="https://formspree.io/niluk93@gmail.com" method="post">
+					<input name="contactEmail" type="email" id="contactEmail" placeholder="Sender's Email" value="" required="">
+					<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+					<textarea name="contactMessage" id="contactMessage" placeholder="Type message here" rows="10" cols="50" required=""></textarea>
+					<button class="submitform">Submit</button>
+				</form>
 
-            <!-- contact-warning -->
-            <div id="message-warning">            	
-            </div>            
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
-
-         </div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /contact-form -->
-	
-		<footer>
-			<div class="row">
-	
-				<div class="col-six tab-full pull-right social">
-	
-					<ul class="footer-social">        
-					<li><a href="https://www.github.com/Niluk93"><i class="fab fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/nilesh-krishnan-58501667"><i class="fab fa-linkedin"></i></a></li>
-				</ul> 
-					
-			</div>
-	
-			<div class="col-six tab-full">
-				<div class="copyright">
-						<span>© Copyright Kards 2016.</span> 
-						<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
-					</div>		                  
+				<!-- contact-warning -->
+				<div id="message-warning">            	
+				</div>            
+				<!-- contact-success -->
+				<div id="message-success">
+				   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
 				</div>
-	
-				<div id="go-top">
-					<a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-long-arrow-alt-up"></i></a>
-				</div>
-	
-			</div> <!-- /row -->     	
-		</footer>  	
-	</section> <!-- /contact -->
 
+			 </div> <!-- /col-twelve -->
+			
+		</div> <!-- /contact-form -->
+		
+			<footer>
+				<div class="row">
+		
+					<div class="col-six tab-full pull-right social">
+		
+						<ul class="footer-social">        
+						<li><a href="https://www.github.com/Niluk93"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/nilesh-krishnan-58501667"><i class="fab fa-linkedin"></i></a></li>
+					</ul> 
+						
+				</div>
+		
+				<div class="col-six tab-full">
+					<div class="copyright">
+							<span>© Copyright Kards 2016.</span> 
+							<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+						</div>		                  
+					</div>
+		
+					<div id="go-top">
+						<a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+		
+				</div> <!-- /row -->     	
+			</footer>  	
+		</section> <!-- /contact -->
+	</contactSection>
 
    <!-- footer
    ================================================== -->
-
-   
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
+	<footer>
+		<div id="preloader"> 
+			<div id="loader"></div>
+		</div> 
+	</footer>
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
